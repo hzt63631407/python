@@ -30,3 +30,16 @@ def fun_not_var(var_data):
         print('嘿嘿嘿')
 fun_not_var(var)
 # 在python中 None,  False, 空字符串"", 0, 空列表[], 空字典{}, 空元组()都相当于False
+
+
+def s(t):
+    t1 = [t]                    #  正确
+    # if 123 in t1:
+    #     print(123)
+
+    if "123" in t1:             # 正确   # 如果是in后面是字符串 if后面不能是int   会报 TypeError: argument of type 'int' is not iterable
+        print(123)
+
+t = '123'
+s(t)
+

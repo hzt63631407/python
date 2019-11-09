@@ -38,8 +38,10 @@ thread1 = myThread(1, "Thread-1", 3)
 thread2 = myThread(2, "Thread-2", 4)
 
 # 开启新线程
+print("主线程")
 thread1.start()
 thread2.start()
+print("主线程")
 
 # 添加线程到线程列表
 threads.append(thread1)

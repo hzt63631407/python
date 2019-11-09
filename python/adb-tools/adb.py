@@ -15,7 +15,7 @@ def getDevicesAll():
     except:
         pass
 
-    print(u"\n设备名称: %s \n总数量:%s台" % (devices, len(devices)))
+    # print(u"\n设备名称: %s \n总数量:%s台" % (devices, len(devices)))
 
     return devices
 def runTelegram(devices):
@@ -36,12 +36,13 @@ def stopTelegram(devices):
 if __name__=="__main__":
     try:
         devices = getDevicesAll()
+        print(devices[0])
     except:
         print("获取设备出错")
 
-    res = input("输入1:")
-    if int(res) == 1:
-        try:
-            runTelegram(devices)
-        except:
-            print("启动错误")
+    # res = input("输入1:")
+    # if int(res) == 1:
+    #     try:
+    #         runTelegram(devices)
+    #     except:
+    #         print("启动错误")

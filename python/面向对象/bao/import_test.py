@@ -6,15 +6,14 @@ import import_def_test
 A = import_def_test.add(1, 2)
 print(A)
 
-
 from import_class_test import C
+
 # import import_class_test
 
 B = C()
 c = B.add_1(1, 2)
 print(B)
 print(c)
-
 
 import sys
 sys.path.append('..')  # 将当前模块上级目录路径加到当前模块扫描的路径里
@@ -29,7 +28,17 @@ print(e)
 from bao import import_class_test
 
 c = import_class_test.C()
-c.add_1(1,  2)
+c.add_1
 
 
+import os
+import sys
 
+WORK_DIR = os.path.dirname(os.path.os.path.abspath(__file__))
+# sys.path.append('..')
+sys.path.insert(0, os.path.join(WORK_DIR, "sys_path"))                  # 添加固定的路径导入
+from import_test_3 import *
+
+e = E()
+e = e.add_3(4, 2)
+print(e)

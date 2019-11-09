@@ -18,11 +18,11 @@ time.sleep(1)
 
 d(resourceId="com.smile.gifmaker:id/tv_game_center").click()
 
-def test_1(i):
+def tes_1(i):
 
     time.sleep(1)
 
-    d(text="推荐").click()
+    d(text="游戏").click()
 
     time.sleep(1)
 
@@ -41,7 +41,7 @@ def test_1(i):
     d(resourceId="com.smile.gifmaker:id/left_btn").click()
 
 for i in range(0, 1):
-    test_1(i)
+    tes_1(i)
 
 # d.
 

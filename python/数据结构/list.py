@@ -67,7 +67,7 @@ print(s2)
 # 在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）
 # 4	list.index(obj)
 # 从列表中找出某个值第一个匹配项的索引位置
-# 5	list.insert(index, obj)
+# 5	list.insert(index, obj)             某个位置
 # 将对象插入列表
 # 6	list.pop([index=-1])
 # 移除列表中的一个元素（默认最后一个元素），并且返回该元素的值
